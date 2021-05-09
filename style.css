@@ -34,7 +34,7 @@ body{
     justify-content:space-between;
     align-items: center;
     padding: 20px var(--left-distance);
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     left: 0;
@@ -172,17 +172,16 @@ article {
 .animacionTarjetas {
     animation-name: entradaTarjetas;
     animation-duration: .6s;
-    animation-fill-mode: both;
-    /* animation-direction: reverse; */
+    animation-direction: reverse;
 }
 
 @keyframes entradaTarjetas {
     0% {
-        transform: translateY(200px);
+        transform: translateY(0px);
     }
     
     100% {
-        transform: translateY(0px);
+        transform: translateY(200px);
     }
 }
 
